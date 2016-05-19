@@ -1804,7 +1804,8 @@ pre code {
     width: 41.66666667%;
   }
   .col-sm-4 {
-    width: 50%;
+    width: 33.3333333%;
+    padding-bottom: 50px;
   }
   .col-sm-3 {
     width: 33%;
