@@ -1,16 +1,430 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="bootstrap theme, bootstrap template, html5 theme">
+    <meta name="description" content="Free Bootstrap template based on HTML5 and CSS3">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="./css/animate.css"/>
+    <script src="./js/jquery-2.1.0.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/typer.js"></script>
+    <script src="./js/blocs.js"></script>
+    <link rel='stylesheet' href='./css/et-line.min.css'/>
+    <link rel='stylesheet' href='./css/font-awesome.min.css'/>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
+            <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="550503479423-32t14ed1g05bqvff7a9n9lvjcadgng1q.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>Stutor - Tutoring Hub</title>
+     
+</head>
 <body>
+<!-- Main container -->
+<div class="page-container">
+    <!-- Navigation Bloc -->
+    <div class="bloc bgc-carmine-pink d-bloc" id="nav-bloc">
+        <div class="container">
+            <nav class="navbar row">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="img/ep16logo.png"></span> STUTOR</a>
+                    <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-1">
+                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-1">
+                    <ul class="site-navigation nav navbar-nav">
+                        <li>
+                            <a  onclick="scrollToTarget('#services')">Overview</a>
+                        </li>
+                        <li>
+                            <a onclick="scrollToTarget('#porfolio')">Application</a>
+                        </li>
+                        <li>
+                            <a onclick="scrollToTarget('#team')">Team</a>
+                        </li>
+                        <li>
+                            <a onclick="scrollToTarget('#quote')">Contact Us</a>
+                        </li>
+                        <li>
+                            <a onclick="scrollToTarget('#faq')">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navigation Bloc END -->
 
-<h1>Stutor</h1>
+    <!-- header -->
+    <div class="bloc bgc-outer-space bg-city-overlay d-bloc" id="header">
+        <div class="container bloc-xl">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="text-center mg-lg tc-white">TUTOR FOR <span
+                            data-typer-targets="YOURSELF,OTHERS,A BETTER EDUCATION, THE FUTURE"></span></h3>
 
-<p title=Project Status>
-This page is under construction. 
-</p>
+                    <p class="text-center  mg-lg animated fadeInUp animDelay02">
+                        Tutoring for a better future, one step at a time. <!--We need a better motto-->
+                    </p>
 
-<p><b>
-Project status will be updated every 2 weeks.
-</b></p>
+                    <div class="text-center">
+                        <a class="btn  btn-xl btn-wire wire-btn-carmine-pink animDelay06 animated fadeInUp"
+                           onclick="scrollToTarget('#porfolio')">OUR PORTFOLIO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header END -->
 
+    <!-- services -->
+    <div class="bloc l-bloc bgc-white" id="services">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span class="et-icon-picture icon-xl icon-carmine-pink animated zoomIn animDelay02"></span>
+                    </div>
+                    <h3 class="text-center mg-md ">
+                        Web Design
+                    </h3>
+
+                    <p class="text-center">
+                        A little feature description could go here. A little feature description.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span class="et-icon-gears icon-xl icon-carmine-pink animated zoomIn"></span>
+                    </div>
+                    <h3 class="text-center mg-md ">
+                        Web Development
+                    </h3>
+
+                    <p class="text-center">
+                        A little feature description could go here. A little feature description.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span class="et-icon-linegraph icon-xl icon-carmine-pink animated zoomIn animDelay02"></span>
+                    </div>
+                    <h3 class="text-center mg-md ">
+                        Promotion
+                    </h3>
+
+                    <p class="text-center">
+                        A little feature description could go here. A little feature description.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services END -->
+
+    <!-- porfolio -->
+    <div class="bloc l-bloc bgc-white" id="porfolio">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center mg-md ">
+                        Our Portfolio
+                    </h2>
+
+                    <p class="text-center sub-heading">
+                        Just a sample of what we do.
+                    </p>
+                </div>
+            </div>
+            <div class="row voffset">
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/dribbble-preview.png" data-caption="Image description"><img
+                            src="img/dribbble-preview.png" class="img-responsive animated zoomIn" alt="portfolio"/></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/player.png" data-caption="Image description"><img
+                            src="img/player.png" class="img-responsive animated zoomIn" alt="portfolio"/></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/productshot.png" data-caption="Image description"><img
+                            src="img/productshot.png" class="img-responsive animated zoomIn" alt="portfolio"/></a>
+                </div>
+
+            </div>
+            <div class="row voffset">
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/work-11.jpg" data-caption="Image description"><img
+                            src="img/work-11.jpg" class="img-responsive animDelay04 animated zoomIn" alt="portfolio"/></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/food-widget.png" data-caption="Image description"><img
+                            src="img/food-widget.png" class="img-responsive animated zoomIn animDelay04" alt="portfolio"/></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/work-11.jpg" data-caption="Image description"><img
+                            src="img/freebie-app.png" class="img-responsive animDelay04 animated zoomIn" alt="portfolio"/></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- porfolio END -->
+
+    <!-- team -->
+    <div class="bloc bgc-carmine-pink d-bloc" id="team">
+        <div class="container bloc-sm">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center mg-md ">
+                        Meet our team
+                    </h2>
+
+                    <p class="sub-heading text-center">
+                        We are a team of 3 high school developers coming from diverse backgrounds located in the San Francisco Bay Ar, looking to innovate creative solutions for solving the problems of tomorrow. 
+                     
+                    </p>
+                </div>
+            </div>
+            <div class="row voffset-lg">
+                <div class="col-sm-4">
+                    <img src="img/sarangscreenshot.jpg" class="img-responsive animated zoomIn" alt="member"/>
+
+                    <h3 class="text-center mg-md">
+                        Kevin Jiang
+                    </h3>
+
+                    <p class="text-center">
+                         Brief description of yourself here
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/sarangscreenshot.jpg" class="img-responsive animated zoomIn animDelay02" alt="member"/>
+
+                    <h3 class="text-center mg-md">
+                        Sarang Vadali
+                    </h3>
+
+                    <p class="text-center">
+                         Brief description of yourself here
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/sarangscreenshot.jpg" class="img-responsive animDelay04 animated zoomIn" alt="member"/>
+
+                    <h3 class="text-center mg-md">
+                        James Wang
+                    </h3>
+                    <p class="text-center">
+                        Brief description of yourself here
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- team END -->
+
+    <!-- testimonials -->
+    <div class="bloc bgc-white l-bloc" id="bloc-6">
+        <div class="container bloc-md">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+                    <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                            <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item">
+                                <div class="profile-circle">
+                                    <img src="img/ep16logo.png"
+                                         class="img-responsive img-circle center-block img-frame-rd-md" alt="member"/>
+                                </div>
+                                <blockquote>
+                                    <p>"What the tech industry often forgets is that with age comes wisdom. Older workers are usually better at following direction, mentoring, and leading." - Vivek Wadhwa</p>
+                                </blockquote>
+                            </div>
+                            <div class="item">
+                                <div class="profile-circle">
+                                    <img src="img/ep16logo.png"
+                                         class="img-responsive img-circle center-block img-frame-rd-md" alt="member"/>
+                                </div>
+                                <blockquote>
+                                    <p>"The delicate balance of mentoring someone is not creating them in your own image, but giving them the opportunity to create themselves." - Steven Spielberg</p>
+                                </blockquote>
+                            </div>
+                            <div class="active item">
+                                <div class="profile-circle">
+                                    <img src="img/ep16logo.png"
+                                         class="img-responsive img-circle center-block img-frame-rd-md" alt="member"/>
+                                </div>
+                                <blockquote>
+                                    <p>"Teachers say their schools of education did not adequately prepare them for the classroom. They would have welcomed more mentoring and feedback in their early years." - Arne Duncan</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonials END -->
+ <div class="bloc bgc-carmine-pink d-bloc" id="quote">
+        <div class="container bloc-md">
+            <div class="row">
+                <div class="col-sm-9">
+                    <center>
+                    <h3 class="mg-md animated zoomIn">
+                        Don&rsquo;t hesitate to contact us now!
+                    </h3>
+                    </center>
+                </div>
+                <center>
+                <div class="col-sm-3 text-center">
+                    <a href="mailto: jameswang1279@gmail.com" class="btn btn-lg wire-btn-white btn-wire animated zoomIn"><center> Contact Us</center></a>
+                </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Footer - quote END -->
+
+    <div class="bloc l-bloc" id="faq">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center mg-md ">
+                        Frequently Asked Questions
+                    </h2>
+                </div>
+            </div>
+            <div class="row voffset-mg">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapseOne" aria-expanded="false">Is Stutor Free?</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-expanded="false"
+                                 style="height: 0px;">
+                                <div class="panel-body">
+                                   Stutor is free for everyone to use! We offer two platforms, a peer-to-peer tutoring platform and a professional tutoring system. The purpose of Stutor is for you to be able to conveniently find a tutor that would be able to best help you. Stutor is built upon a network of dedicated and committed students who are willing to devote time to tutor others. The professional platform, however, is a paid system, in which you wil receive tutoring services from someone that has been screened to be able to provide tutoring at a professional level
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapseTwo" aria-expanded="false">How will I be able to access Stutor?</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+                                <div class="panel-body">
+                                    You will be able to access Stutor from any device with internet access! (although tablet or computer is preferred). Currently, the mobile/tablet application has been launched for Android systems, with ongoing development for iOS and web application. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default"> <!--HEADING CONTAINS SPACE!-->
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapseThree" aria-expanded="false">How are tutors hired by Stutor?</a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+                                <div class="panel-body">
+                                    Peer-to-peer tutors can be anyone that is currently enrolled in high school or attend a university. Because Stutor relies upon a peer-to-peer network, Stutor will reach out to tutors in communities throughout the United States to join our network. Additionally, anyone qualified will also be able to apply to become a professional tutor.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                     <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapseFour" aria-expanded="false">How will the effectiveness of Stutor tutoring services be assessed ??</a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+                                <div class="panel-body">
+                                     Insert answer here
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                         <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapseFive" aria-expanded="false">Does Stutor avoid plagirism when tutors and tutees communicate with each other?</a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+                                <div class="panel-body">
+                                 Insert answer here
+                                </div>
+                            </div>
+                            <!--Mention plagirism, flagging poor tutors, etc. -->
+                        </div>
+                    </div>
+                    
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ScrollToTop Button -->
+    <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
+            class="fa fa-chevron-up"></span></a>
+    <!-- ScrollToTop Button END-->
+
+    <!-- Footer - bloc-8 -->
+   
+    
+    <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2 text-center mg-md">Copyright © Stutor Inc. 2016 <br> Kevin Jiang <br> Sarang Vadali <br> James Wang</div>
+            </div>
+    <!-- Footer - bloc-8 END -->
+</div>
+<div class="g-hangout" data-render="createhangout"></div>
+<!-- Main container END -->
 </body>
+
+<!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-29134061-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Google Analytics END -->
+
 </html>
