@@ -2,6 +2,16 @@
 <html>
 <head>
 
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+  gapi.hangout.render('placeholder-rr', {
+    'render': 'createhangout',
+    'initial_apps': [{'app_id' : '184219133185', 'start_data' : 'dQw4w9WgXcQ', 'app_type' : 'ROOM_APP' }],
+    'widget_size': 175
+  });
+</script>
+
+
     <meta charset="utf-8">
     <meta name="keywords" content="bootstrap theme, bootstrap template, html5 theme">
     <meta name="description" content="Free Bootstrap template based on HTML5 and CSS3">
@@ -18,7 +28,26 @@
     <link rel='stylesheet' href='./css/font-awesome.min.css'/>
     <link href='http://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext' rel='stylesheet'
           type='text/css'>
+            <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="550503479423-32t14ed1g05bqvff7a9n9lvjcadgng1q.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <title>Stutor - Tutoring Hub</title>
+    <script>
+           function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+    </script>
 </head>
 <body>
 <!-- Main container -->
@@ -54,7 +83,8 @@
                             <a onclick="scrollToTarget('#faq')">FAQ</a>
                         </li>
                         <li>
-                            <a onclick href="/login.html">Login</a>
+                          <!--  <a onclick href="/login.html">Login</a>-->
+                           <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
                         </li>
                     </ul>
                 </div>
@@ -424,6 +454,7 @@
             </div>
     <!-- Footer - bloc-8 END -->
 </div>
+<div id="placeholder-rr"></div>
 <!-- Main container END -->
 </body>
 
