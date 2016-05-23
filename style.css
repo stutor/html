@@ -16,7 +16,10 @@ a:hover{text-decoration: none; cursor:pointer;}
 a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari */
 
 
-   
+head{
+	color:white;
+	padding-left: 30em;
+}
 
 
 /* Globals type styling */
@@ -70,10 +73,10 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 /* Dark theme */
 
 .d-bloc{
-	color:rgba(255,255,255,.7);
+	color:rgba(255,255,255,1);
 }
 .d-bloc button:hover{
-	color:rgba(255,255,255,.9);
+	color:rgba(255,255,255,1);
 }
 .d-bloc h1, .d-bloc h2, .d-bloc h3, .d-bloc h4,.d-bloc h5, .d-bloc h6, .d-bloc .ico{
 	color:rgba(255,255,255,.9);
@@ -474,7 +477,7 @@ a[data-lightbox]:hover img{
 /* Background colour styles */
 
 .bgc-carmine-pink{
-	background-color:#F35342;
+	background-color:#e65c00;
 }
 .bgc-outer-space{
 	background-color:#47454B;
