@@ -406,7 +406,7 @@ a[data-lightbox]:hover::before{
 	height:50px;
 	margin-left:-25px;
 	border-radius: 50%;
-	background:rgba(0,0,0,.6);
+	background:rgba(240, 0, 0, 1);
 	color:#FFF;
 	font-weight:100;
 	z-index: 1;
@@ -514,13 +514,13 @@ a[data-lightbox]:hover img{
 /* Bloc image backgrounds */
 
 .bg-city-overlay{
-	background-image:url("img/background.jpg");
-	opacity: 0.3;
+	background-image:url("http://toodamnyoung.com/wp-content/uploads/2014/05/college-graduation.jpg");
+	opacity: 1;
 }
 
 
 .quote {
-    color: rgba(0,0,0,.1);
+    color: rgba(240, 0, 0, 1);
     text-align: center;
     margin-bottom: 30px;
 }
