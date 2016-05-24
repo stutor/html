@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Snippet: Login Form</title>
+    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="/stylelogin.css">
+  </head>
+
+  <body>
+<div class="topcorner"><a href="index.html">Back to Home</a></div>
+<center>
+    <img src = "/img/ep16logo_edited2.jpg">
+</center>
+      <div class="wrapper">
+    <form class="form-signin">       
+      <h2 class="form-signin-heading">Student Login</h2>
+    <form name = "login"> 
+      <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
+      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+      <button class="btn btn-lg btn-primary btn-block" onclick = "check(this.form)" type="submit">Login</button>   
+      <br>
+        Click <a href = "/schoollogin.html"> here</a> if you are a school administrator or tutor.
+      <br>
+      Click <a href = "/register.html"> here</a> to sign up.
+      <br>
+      </form>
+      
+       <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.username.value == "student" && form.password.value == "student") {
+                    window.open('/ZNA441.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+    
+    </form>
+    
+    
+
+    
+    
+    
+    
+  </body>
+</html>
