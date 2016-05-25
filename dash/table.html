@@ -1,11 +1,14 @@
-<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-	<title>Light Bootstrap Dashboard by Creative Tim</title>
+	<title>Management & Directory</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -29,24 +32,29 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
 </head>
 <body>
 
 <div class="wrapper">
     <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
 
-    <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
+    <!--
 
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
 
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="http://www.creative-tim.com" class="simple-text">
-                    Creative Tim
+                    John Doe
                 </a>
             </div>
 
             <ul class="nav">
-                <li>
+                <li class="active">
                     <a href="dashboard.html">
                         <i class="pe-7s-graph"></i>
                         <p>Dashboard</p>
@@ -58,47 +66,41 @@
                         <p>User Profile</p>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="table.html">
                         <i class="pe-7s-note2"></i>
-                        <p>Table List</p>
+                        <p>Management</p>
                     </a>
                 </li>
                 <li>
                     <a href="typography.html">
                         <i class="pe-7s-news-paper"></i>
-                        <p>Typography</p>
+                        <p>Plagirism Upload</p>
                     </a>
                 </li>
                 <li>
                     <a href="icons.html">
                         <i class="pe-7s-science"></i>
-                        <p>Icons</p>
+                        <p>Student Dashboard</p>
                     </a>
                 </li>
                 <li>
                     <a href="maps.html">
                         <i class="pe-7s-map-marker"></i>
-                        <p>Maps</p>
+                        <p>Usage Analytics</p>
                     </a>
                 </li>
                 <li>
                     <a href="notifications.html">
                         <i class="pe-7s-bell"></i>
-                        <p>Notifications</p>
-                    </a>
-                </li>
-				<li class="active-pro">
-                    <a href="upgrade.html">
-                        <i class="pe-7s-rocket"></i>
-                        <p>Upgrade to PRO</p>
+                        <p>Support</p>
                     </a>
                 </li>
             </ul>
     	</div>
     </div>
-
-    <div class="main-panel">
+ 
+  <div class="main-panel">
         <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -108,7 +110,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Table List</a>
+                    <a class="navbar-brand" href="#">Dashboard</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
@@ -124,11 +126,11 @@
                                     <span class="notification">5</span>
                               </a>
                               <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-exclamation-sign"></span>Plagirism attempt detected in Chemistry, Honors - Smith, Adam</a></li>
+                                <li><a href="#">New student joined school network - Madison, Michelle</a></li>
+                                <li><a href="#">New teacher joined school network in Microeconomics, AP - Song, Dan </a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-exclamation-sign"></span>Plagirism attempt detected in Computer Science, AP - Pangmillian, Lemar</a></li>
+                                <li><a href="#">New document uploaded to plagirism database in Calculus BC, AP - Nad, Katherine</a></li>
                               </ul>
                         </li>
                         <li>
@@ -144,23 +146,8 @@
                                Account
                             </a>
                         </li>
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    Dropdown
-                                    <b class="caret"></b>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                              </ul>
-                        </li>
                         <li>
-                            <a href="#">
+                            <a href="/index.html">
                                 Log out
                             </a>
                         </li>
@@ -169,67 +156,104 @@
             </div>
         </nav>
 
-
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Striped Table with Hover</h4>
-                                <p class="category">Here is a subtitle for this table</p>
+                                <h4 class="title">Tutors - All</h4>
                             </div>
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover table-striped">
                                     <thead>
                                         <th>ID</th>
                                     	<th>Name</th>
-                                    	<th>Salary</th>
-                                    	<th>Country</th>
-                                    	<th>City</th>
+                                    	<th>Subject</th>
+                                    	<th>Tutoring Hours</th>
+                                    	<th>Revenue</th>
+                                    	<th>Ratngs (Out of 5)</th>
                                     </thead>
                                     <tbody>
                                         <tr>
                                         	<td>1</td>
                                         	<td>Dakota Rice</td>
-                                        	<td>$36,738</td>
-                                        	<td>Niger</td>
-                                        	<td>Oud-Turnhout</td>
+                                        	<td>Mathematics - Calculus BC, AP</td>
+                                        	<td>248</td>
+                                        	<td>$720</td>
+                                        	<td>4.88</td>
                                         </tr>
                                         <tr>
                                         	<td>2</td>
                                         	<td>Minerva Hooper</td>
-                                        	<td>$23,789</td>
-                                        	<td>Curaçao</td>
-                                        	<td>Sinaai-Waas</td>
+                                        	<td>Science - Biology, AP</td>
+                                        	<td>721</td>
+                                        	<td>$2,000</td>
+                                        	<td>4.98</td>
                                         </tr>
                                         <tr>
                                         	<td>3</td>
                                         	<td>Sage Rodriguez</td>
-                                        	<td>$56,142</td>
-                                        	<td>Netherlands</td>
-                                        	<td>Baileux</td>
+                                        	<td>History - World History, AP</td>
+                                        	<td>122</td>
+                                        	<td>N/A</td>
+                                        	<td>4.02</td>
                                         </tr>
                                         <tr>
                                         	<td>4</td>
                                         	<td>Philip Chaney</td>
-                                        	<td>$38,735</td>
-                                        	<td>Korea, South</td>
-                                        	<td>Overland Park</td>
+                                        	<td>History - United States History, Honors</td>
+                                        	<td>223</td>
+                                        	<td>$987</td>
+                                        	<td>4.74</td>
                                         </tr>
                                         <tr>
                                         	<td>5</td>
                                         	<td>Doris Greene</td>
-                                        	<td>$63,542</td>
-                                        	<td>Malawi</td>
-                                        	<td>Feldkirchen in Kärnten</td>
+                                        	<td>Language - English Composition</td>
+                                        	<td>652</td>
+                                        	<td>$3,254</td>
+                                        	<td>5.00</td>
                                         </tr>
                                         <tr>
                                         	<td>6</td>
                                         	<td>Mason Porter</td>
-                                        	<td>$78,615</td>
-                                        	<td>Chile</td>
-                                        	<td>Gloucester</td>
+                                        	<td>Mathematics - Linear Algebra, Calculus</td>
+                                        	<td>784</td>
+                                        	<td>$6,294</td>
+                                        	<td>3.92</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>7</td>
+                                        	<td>Josh Hunt</td>
+                                        	<td>Science - Biology</td>
+                                        	<td>24</td>
+                                        	<td>N/A</td>
+                                        	<td>4.32</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>8</td>
+                                        	<td>Mason Nulli</td>
+                                        	<td>Mathematics - Multivariable Calculus, Honors</td>
+                                        	<td>1,003</td>
+                                        	<td>$30,000</td>
+                                        	<td>4.52</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>9</td>
+                                        	<td>Johnny Marks</td>
+                                        	<td>Economics - Macroeconomics, Microeconomics, AP</td>
+                                        	<td>784</td>
+                                        	<td>$6,294</td>
+                                        	<td>3.92</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>10</td>
+                                        	<td>Lenin Van</td>
+                                        	<td>Mathematics - Algebra</td>
+                                        	<td>128</td>
+                                        	<td>$801</td>
+                                        	<td>2.18</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -239,63 +263,43 @@
                     </div>
 
 
+  <div class="content">
+            <div class="container-fluid">
+                <div class="row">
                     <div class="col-md-12">
-                        <div class="card card-plain">
+                        <div class="card">
                             <div class="header">
-                                <h4 class="title">Table on Plain Background</h4>
-                                <p class="category">Here is a subtitle for this table</p>
+                                <h4 class="title">Alerts & Disputes</h4>
                             </div>
                             <div class="content table-responsive table-full-width">
-                                <table class="table table-hover">
+                                <table class="table table-hover table-striped">
                                     <thead>
-                                        <th>ID</th>
-                                    	<th>Name</th>
-                                    	<th>Salary</th>
-                                    	<th>Country</th>
-                                    	<th>City</th>
+                                        <th>Event ID</th>
+                                    	<th>Name of Tutor Involved</th>
+                                    	<th>Priority (1 = Most Urgent)</th>
+                                    	<th>Other Parties Involved</th>
+                                    	<th>Event Date</th>
+                                    	<th>Contact Information</th>
+                                    	<th>Description</th>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                        	<td>1</td>
-                                        	<td>Dakota Rice</td>
-                                        	<td>$36,738</td>
-                                        	<td>Niger</td>
-                                        	<td>Oud-Turnhout</td>
+                                            <td>85145</td>
+                                            <td>Lenin Van</td>
+                                            <td>1</td>
+                                            <td>Johannes Sun - Student</td>
+                                            <td>05/22/2016</td>
+                                            <td>626-445-8754</td>
+                                            <th>Student reported tutor for being off topic and inefficient. Student wants full refund from tutor. Student provided rating: 1</th>
                                         </tr>
-                                        <tr>
-                                        	<td>2</td>
-                                        	<td>Minerva Hooper</td>
-                                        	<td>$23,789</td>
-                                        	<td>Curaçao</td>
-                                        	<td>Sinaai-Waas</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>3</td>
-                                        	<td>Sage Rodriguez</td>
-                                        	<td>$56,142</td>
-                                        	<td>Netherlands</td>
-                                        	<td>Baileux</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>4</td>
-                                        	<td>Philip Chaney</td>
-                                        	<td>$38,735</td>
-                                        	<td>Korea, South</td>
-                                        	<td>Overland Park</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>5</td>
-                                        	<td>Doris Greene</td>
-                                        	<td>$63,542</td>
-                                        	<td>Malawi</td>
-                                        	<td>Feldkirchen in Kärnten</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>6</td>
-                                        	<td>Mason Porter</td>
-                                        	<td>$78,615</td>
-                                        	<td>Chile</td>
-                                        	<td>Gloucester</td>
+                                             <tr>
+                                            <td>82718</td>
+                                            <td>Lenin Van</td>
+                                            <td>1</td>
+                                            <td>Selynna Pang</td>
+                                            <td>05/21/2016</td>
+                                            <td>626-445-8754</td>
+                                            <th>Inconsistent payment. Student billed 400 credits ($40.00) when priced at 320 credits ($32.00).</th>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -303,40 +307,18 @@
                             </div>
                         </div>
                     </div>
-
+                    
+                    
 
                 </div>
             </div>
         </div>
 
-        <footer class="footer">
+ 
+      <footer class="footer">
             <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Company
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                               Blog
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
                 <p class="copyright pull-right">
-                    &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                    &copy; 2016 <a href="/index.html">Stutor</a>
                 </p>
             </div>
         </footer>
