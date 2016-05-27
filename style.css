@@ -21,6 +21,15 @@ head{
 	padding-left: 30em;
 }
 
+.header h1 {
+  color: white;
+  margin: 0 0 30px;
+  float:left;
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  
+}
 
 /* Globals type styling */
  h1, h2, h3, h4, h5, h6, p, label, .btn, a{
@@ -193,6 +202,8 @@ head{
 	font-size:25px!important;
 	font-weight:normal;
 	font-weight:600;
+	color: blue;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
 }
 .navbar-brand img{
 	max-height: 200px;
@@ -477,7 +488,7 @@ a[data-lightbox]:hover img{
 /* Background colour styles */
 
 .bgc-carmine-pink{
-	background-color:#e65c00;
+	background-color:#F35342
 }
 .bgc-outer-space{
 	background-color:#47454B;
